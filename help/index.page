@@ -1,0 +1,91 @@
+<page id="index" type="guide" xmlns="http://projectmallard.org/1.0/">
+	<title>Sunflower Help</title>
+	<p>Small and highly customizable twin-panel file manager for Linux</p>
+	<links type="section"/>
+	<section id="1">
+		<title>Overview</title>
+		<list>
+			<item><p>Generic overview screenshots</p></item>
+		</list>
+	</section>
+	<section id="2">
+		<title>Installation</title>
+		<list>
+			<item><p>Download from site</p></item>
+			<item><p>Clone from github</p></item>
+		</list>
+	</section>
+	<section id="2.0">
+		<title>Terminology</title>
+		<list>
+			<item><p>GUI - Definitions of buttons, toolbars, commands used in SF</p></item>
+			<item><p>Operation</p></item>
+			<item><p>Queue</p></item>
+		</list>
+	</section>
+	<section id="2.1">
+		<title>Getting Started</title>
+		<list>
+			<item><p>Basic window explanations</p></item>
+		</list>
+	</section>
+	<section id="2.5">
+		<title>Usage</title>
+		<list>
+			<item><p>Normal everyday usage and simple commands</p></item>
+			<item><p>Basic selection (marking)</p></item>
+		</list>
+	</section>
+	<section id="3">
+		<title>Advanced</title>
+		<list>
+			<item><p>More advanced stuff, but that are already in the application</p></item>
+			<item><p>Advanced selection (marking)</p></item>
+		</list>
+	</section>
+	<section id="4">
+		<title>Customizing</title>
+		<list>
+			<item><p>Adding Commands</p></item>
+			<item><p>Adding to the toolbar</p></item>
+		</list>
+	</section>
+	<section id="5">
+		<title>Renaming Tool</title>
+	</section>
+	<section id="5.5">
+		<title>Contact Us</title>
+		<list>
+			<item><p>Bug Reporting</p></item>
+			<item><p>Mailing List</p></item>
+			<item><p>Google+ Community</p></item>
+			<item><p>IRC</p></item>
+		</list>
+	</section>
+	<section id="6">
+		<title>Developers</title>
+		<list>
+			<item>
+				<p>What you can to to contribute</p>
+				<list>
+					<item><p>Work on the app</p></item>
+					<item><p>Create a pluging</p></item>
+					<item><p>Translations</p></item>
+					<item><p>Work on the help</p></item>
+				</list>
+			</item>
+			<item><p>Code style</p></item>
+			<item><p>Plugins</p></item>
+			<item>
+				<p>Translations</p>
+				<list>
+					<item><p>Code style</p></item>
+					<item><p>Link to translation site</p></item>
+				</list>
+			</item>
+		</list>
+	</section>
+	<section id="7">
+		<title>Appendix - File Management Terminology</title>
+	</section>
+</page>
