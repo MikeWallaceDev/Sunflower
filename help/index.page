@@ -75,12 +75,13 @@
 				</list>
 			</item>
 			<item><p>Code style</p></item>
+			<item><p>Meaning of the branches</p></item>
 			<item><p>Plugins</p></item>
 			<item>
 				<p>Translations</p>
 				<list>
-					<item><p>Code style</p></item>
-					<item><p>Link to translation site</p></item>
+					<item><p>Link to application translation site</p></item>
+					<item><p>Link to help translation site</p></item>
 				</list>
 			</item>
 		</list>
