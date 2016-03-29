@@ -2,7 +2,7 @@
   type="topic"
   id="coding_conventions">
   <info>
-    <link type="guide" xref="index"/>
+    <link type="guide" xref="developers"/>
   </info>
   <title>Coding Conventions</title>
   <section id="coding_style">
