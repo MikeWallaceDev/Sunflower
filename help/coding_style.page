@@ -1,89 +1,94 @@
 <page xmlns="http://projectmallard.org/1.0/"
-      type="topic"
-      id="coding_style">
-<info>
-  <link type="guide" xref="index"/>
-</info>
-<title>Coding Style</title>
+  type="topic"
+  id="coding_conventions">
+  <info>
+    <link type="topic" xref="index"/>
+  </info>
+  <title>Coding Conventions</title>
+  <section id="coding_style">
+    <title>Coding Style</title>
 
-<p>If you wish to contribute to this project you need to stick to coding style in which the whole program was written. Keeping code consistent helps finding bugs and making the whole thing easier for all of us.</p>
+    <p>If you wish to contribute to this project you need to stick to coding style in which the whole program was written. Keeping code consistent helps finding bugs and making the whole thing easier for all of us.</p>
 
-<p>Coding style is actually <link href="http://www.python.org/dev/peps/pep-0008/">PEP 8</link> with some slight modifications. Read that document before continuing.</p>
+    <p>Coding style is actually <link href="http://www.python.org/dev/peps/pep-0008/">PEP 8</link> with some slight modifications. Read that document before continuing.</p>
 
-<p>Ok, now that you've read that nice document, the rules:</p>
-<list>
-  <item><p>Use tabs instead of spaces. This makes it easy for everyone to use whatever tab size they want without breaking the style</p></item>
-  <item><p>Use single quotes (') for string and double quotes (") for function documentation</p></item>
-  <item><p>Class definition has 2 blank lines before and after</p></item>
-  <item><p>Work on the Class definition needs to have docstring describing what it does unless class is exception</p>
-  <code mime="text/x-c++src">
-  class ExampleOne:
-      """Example class code formatting"""
+    <p>Ok, now that you've read that nice document, the rules:</p>
+    <p>Important: This coding style applies only if you are contributing to software itself. Plugin developers are free to use their own style. If you want your plugin to be included in default installation you will need to comply with this coding style!</p>
 
-      def __init__(self):
-          pass
+    <list>
+      <item><p>Use tabs instead of spaces. This makes it easy for everyone to use whatever tab size they want without breaking the style</p></item>
+      <item><p>Use single quotes (') for string and double quotes (") for function documentation</p></item>
+      <item><p>Class definition has 2 blank lines before and after</p></item>
+      <item><p>Work on the Class definition needs to have docstring describing what it does unless class is exception</p>
+      <code mime="text/x-python">
+        class ExampleOne:
+        """Example class code formatting"""
 
-
-  class SecondExample:
-      """Second class example"""
-      pass
-  </code>
-  </item>
-</list>
+        def __init__(self):
+        pass
 
 
+        class SecondExample:
+        """Second class example"""
+        pass
+      </code>
+    </item>
+    <item>
+      <p>Use import first followed by from import with one blank line in between</p>
+      <code mime="text/x-python">
+        import os
+        import gtk
 
-
-    Use import first followed by from import with one blank line in between;
-
-    import os
-    import gtk
-
-    from gui.main_window import MainWindow
-    from gui.input_dialogs import InputDialog
-
-    Maximum number of horizontal characters should be 120. You can use less if you find it suitable;
-
-    If you have a long string you can break it into chunks using brackets. You can also do this if code would look ugly otherwise;
-
-    long_string = (
+        from gui.input_dialogs import InputDialog
+      </code>
+    </item>
+    <item><p>Maximum number of horizontal characters should be 120. You can use less if you find it suitable</p></item>
+    <item>
+      <p>If you have a long string you can break it into chunks using brackets. You can also do this if code would look ugly otherwise</p>
+      from gui.main_window import MainWindow
+      <code mime="text/x-python">
+        long_string = (
         'This is an example of long string which is hard to '
         'squeeze into 120 character limit.'
-    )
+        )
+      </code>
+    </item>
+    <item><p>Do not use shebang in python source code files. This prevents wrong version of Python to be used.</p></item>
+    <item>
+      <p>No spaces between function name, opening brace and first argument name. One space after comma in arguments list:</p>
+      <code mime="text/x-python">
+        def foo(bar, baz): pass
 
-    Do not use shebang in python source code files. This prevents wrong version of Python to be used.
+        foo('bar', 1)
+      </code>
+    </item>
+    <item>
+      <p>In comparison first place the data that is compared, second place it is compared with:</p>
+      <code mime="text/x-python">
+        # correct
+        if sys.platform == 'win32': pass
 
-    No spaces between function name, opening brace and first argument name. One space after comma in arguments list:
+        # honorable C style, but incorrect
+        if 'win32' == sys.platform: pass
+      </code>
+    </item>
+  </list>
+</section>
 
-    def foo(bar, baz): pass
+<section id="Commits">
+  <title>Commits</title>
+  <p>When committing changes to repository use the format below for description. Partial list of modules: Plugin base, Plugins, Operations, Main window, Operation dialogs, etc.</p>
+  <code mime="text/x-python">
+    Module: [Submodule:] Change
 
-    foo('bar', 1)
+    Bigger description if needed
+  </code>
+  <p>Commit messages need to be concise, direct and describe what was changed. Usage of punctuation signs is required.</p>
+</section>
 
-    In comparison first place the data that is compared, second place it is compared with:
-
-    # correct
-    if sys.platform == 'win32': pass
-
-    # honorable C style, but incorrect
-    if 'win32' == sys.platform: pass
-
-Important: This coding style applies only if you are contributing to software itself. Plugin developers are free to use their own style. If you want your plugin to be included in default installation you will need to comply with this coding style!
-Commits
-
-When committing changes to repository use the format below for description. Partial list of modules: Plugin base, Plugins, Operations, Main window, Operation dialogs, etc.
-
-Module: [Submodule:] Change
-
-Bigger description if needed
-
-Commit messages need to be concise, direct and describe what was changed. Usage of punctuation signs is required.
-Path of blame
-
-We use similar method for our development as Linux Kernel does. Developers are playing "tag". If you change some code and it breaks it's up to you to fix it. If you take code from other users, make sure you commit patches as them. Everyone keeps their credit!
-
-    Status API Training Shop Blog About
-
-
-
+<section id="Path of blame">
+  <title>Path of blame</title>
+  <p>We use similar method for our development as Linux Kernel does. Developers are playing "tag". If you change some code and it breaks it's up to you to fix it. If you take code from other users, make sure you commit patches as them. Everyone keeps their credit!</p>
+</section>
 
 </page>
