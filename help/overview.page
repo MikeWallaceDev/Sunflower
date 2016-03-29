@@ -1,0 +1,17 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="overview">
+<info>
+  <link type="guide" xref="index"/>
+</info>
+<title>Overview</title>
+<p>By the end of this page, you will be able to plant your magic
+beans and nurture them into a bean sprout.</p>
+<links type="section"/>
+<section id="first">
+  <title>With a Section</title>
+</section>
+<section id="second">
+  <title>With a Section</title>
+</section>
+</page>
