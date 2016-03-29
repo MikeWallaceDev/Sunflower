@@ -1,0 +1,38 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="commands_menu">
+<info>
+  <link type="guide" xref="index"/>
+</info>
+<title>Commands Menu</title>
+<p>Tools are handy drop down menu items which you can configure to suit your needs. They represent an alternative to toolbar items and they are ideal solution for those who enjoy minimalistic interfaces.</p>
+<p>When editing tool menu items you need to enter title and command.</p>
+
+<section id="title">
+  <title>Title</title>
+  <p>Item title is the text you will see under Tools menu.</p>
+  <list>
+    <item>
+      <p>Underscore in the title text indicates the next character should be underlined and used for the mnemonic accelerator key. Only first character will be used if there are more items with same accelerator key.</p>
+    </item>
+    <item>
+      <p>    If whole title text is just one dash item will be used as a menu separator.</p>
+    </item>
+  </list>
+</section>
+
+<section id="command">
+  <title>Command</title>
+  <p>You can use any command within your search path but please note that Sunflower will not start terminal automatically. If you wish to start terminal and execute a command, please take a look at gnome-terminal documentation.</p>
+  <p>Additionally few variables can be passed to the command:</p>
+  <p>    %l, %L - Name of the selected item in the left list.</p>
+  <p>    %r, %R - Name of the selected item in the right list.</p>
+  <p>    %s, %S - Name of the selected item in active list.</p>
+  <p>    %d, %D - Name of the current directory of active list.</p>
+  <p>    %m, %M - All selected items of active list.</p>
+  <p>    %u, %U - All selected items of active list treated like URI.</p>
+  <p>Uppercase versions include full path to the selected item.</p>
+  <p>Note: Adding &amp; (ampersand) at the end of the command means that program should not wait for command to finish.</p>
+</section>
+
+</page>
