@@ -1,0 +1,105 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="installation">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Installation</title>
+  <p>There are two main ways of installing Sunflower on your system:</p>
+  <list>
+    <item><p>Download the appropriate package for your system</p></item>
+    <item><p>Download the source code</p></item>
+  </list>
+  <section id="download_package">
+    <title>Package download</title>
+    <p>Sunflower is available pre-packaged for multiple Linux
+    distributions. Simply use your package manager to install the application on
+    your system.</p>
+    <p>Select your distribution to start the download.</p>
+    <table frame="all" rules="rows">
+      <tr>
+        <td><p><link href="http://sunflower-fm.org/pub/sunflower-0.3.61-1.all.deb">Debian</link></p></td>
+        <td><p><link href="http://sunflower-fm.org/pub/sunflower-0.3.61-1.all.deb">Ubuntu</link></p></td>
+        <td><p><link href="http://sunflower-fm.org/pub/sunflower-0.3.61-1.all.deb">Linux Mint</link></p></td>
+        <td colspan="2"><p><link href="http://sunflower-fm.org/pub/sunflower-0.3.61-1.all.deb">elementary</link></p></td>
+      </tr>
+      <tr>
+        <td><p><link href="http://sunflower-fm.org/pub/sunflower-0.3.61-1.noarch.rpm">RedHat</link></p></td>
+        <td><p><link href="http://sunflower-fm.org/pub/sunflower-0.3.61-1.noarch.rpm">CentOS</link></p></td>
+        <td><p><link
+                   href="http://sunflower-fm.org/pub/sunflower-0.3.61-1.noarch.rpm">Fedora</link></p></td>
+        <td><p><link href="http://sunflower-fm.org/pub/sunflower-0.3.61-1.noarch.rpm">Magea</link></p></td>
+        <td><p><link href="http://sunflower-fm.org/pub/sunflower-0.3.61-1.noarch.rpm">Mandriva</link></p></td>
+      </tr>
+      <tr>
+        <td colspan="5"><p><link href="http://sunflower-fm.org/pub/sunflower-0.3.61-1.noarch.rpm">OpenSuse</link></p></td>
+      </tr> 
+      <tr>
+        <td colspan="5"><p><link href="http://sunflower-fm.org/pub/sunflower-0.3.61-1.noarch.rpm">PCLinuxOSRedHat</link></p></td>
+      </tr> 
+      <tr>
+        <td colspan="5"><p><link href="http://sunflower-fm.org/pub/sunflower-0.3-61.tgz">Gentoo</link></p></td>
+      </tr> 
+    </table>
+    <p>If your distribution is not listed try downloading generic archive.</p>
+  </section>
+
+  <section id="download_source_code">
+	  <title>Download source code</title>
+    <p>You can download the source code in two ways:</p>
+    <list>
+	    <item><p>Download an archive of the source code</p></item>
+	    <item><p>Clone the source code from GitHub</p></item>
+    </list>
+    <section id="download_tarball">
+      <title>Download archive</title>
+      <p>In order to use Sunflower on your Linux system you must first make sure
+      that some prerequired software libraries are installed. This is done
+      automatically for you if you are installing via a system package.</p>
+      <p>You can also download the complete source code as one compressed <link
+      href="http://sunflower-fm.org/pub/sunflower-0.3-61.tgz">archive
+      file.</link></p>
+
+      <p>Once you have downloaded the archive you can unpack it in a directory of
+      your choice. In order to run Sunflower you should add the directory to your PATH.</p>
+    </section>
+
+    <section id="download_source_git_hub">
+      <title>Download source code from GitHub</title>
+      <p>Sunflower is an open source software. You are free to download the source,
+      view it, modify it and propose modifications to the base system. Your ideas
+      and help is most welcome.</p>
+      <p>You can visit Sunflower's GitHub homepage at <link
+      href="https://github.com/MeanEYE/Sunflower">https://github.com/MeanEYE/Sunflower</link></p>
+
+      <p>Or you can clone Sunflower's repository :</p>
+      <code>git clone https://github.com/MeanEYE/Sunflower.git</code>
+      <code>git clone git@github.com:MeanEYE/Sunflower.git</code>
+      <note>
+      <p>Developers might want to clone the <code>develop</code> branch instead
+      of the master branch.</p>	      
+      </note>
+    </section>
+
+    <section id="desktop_file">
+      <title>The .desktop file</title>
+	    <p>In order for your system to detect the newly installed Sunflower
+      application, it requires a special file which is suffixed with
+      ".desktop". You can find a template for this file in the root of the
+      source code tree.</p>
+    </section>
+
+  </section>
+  <section id="optional">
+    <title>Optional packages</title>
+    <p>What are some optional packages? @@@</p>	    
+  </section>
+
+  <section id="trademark">
+    <title></title>
+    <p>
+      All product names used in this website are trademarks of their respective owners, which are in no way associated or affiliated with Sunflower or people involved with the project. These trademarks of other manufacturers are used solely to identify the products of those manufacturers.
+    </p>
+  </section>
+
+</page>
